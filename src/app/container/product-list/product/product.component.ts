@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { Product } from '../../../Models/Product';
 
 @Component({
   selector: 'app-product',
@@ -10,5 +11,5 @@ import { Component, Input } from '@angular/core';
 })
 export class ProductComponent {
   @Input()
-  product: any;
+  product: Product;
 }
