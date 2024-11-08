@@ -5,15 +5,15 @@
     <div class="ekart-product-detail-image">
         <img [src]="product.imageURL" class="ekart-product-detail-image">
     </div>
-    
+
     <div class="ekart-product-detail">
         <div class="ekart-product-detail-name">
             <h2>{{product.name}}</h2>
         </div>
         <div class="ekart-product-detail-gbc">
-            <span setBackground>{{product.gender}}</span>
-            <span setBackground>{{product.brand}}</span>
-            <span setBackground>{{product.category}}</span>
+            <span [setBackground]="{backColor: '#36454F', textColor: 'white'}">{{product.gender}}</span>
+            <span [setBackground]="{backColor: 'yellow', textColor: 'black'}">{{product.brand}}</span>
+            <span [setBackground]="{backColor: 'black', textColor: 'white'}">{{product.category}}</span>
         </div>
         <div class="ekart-product-detail-price">
             <p>
@@ -31,7 +31,7 @@
                 <span class="ekart-product-detail-available-size">7</span>
                 <span class="ekart-product-detail-available-size">8</span>
                 <span class="ekart-product-detail-available-size">9</span>
-            </diV>                
+            </diV>
         </div>
 
         <div class="ekart-product-detail-color">
@@ -43,7 +43,7 @@
                 <span class="ekart-product-detail-available-color" style="background-color: green;"></span>
                 <span class="ekart-product-detail-available-color" style="background-color: black;"></span>
                 <span class="ekart-product-detail-available-color" style="background-color: blue;"></span>
-            </diV>                
+            </diV>
         </div>
 
         <div class="ekart-product-detail-desc">
@@ -52,7 +52,7 @@
             </div>
             <div style="margin-top: 20px">
                 <p>DESCRIPTION</p>
-            </div>                
+            </div>
         </div>
     </div>
     <div class="ekart-product-detail-addtoCart">
